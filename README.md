@@ -1,1 +1,17 @@
 # SNHU_CS340
+
+# Project Reflection
+How do you write programs that are maintainable, readable, and adaptable?
+Writing maintainable, readable, and adaptable programs requires careful organization and clear structure within the code. During Project One, I developed a reusable CRUD Python module that handled all database interactions independently from the dashboard interface. By separating database logic from user interface logic, the code became easier to understand, debug, and expand.
+The primary advantage of this approach was modularity. The dashboard in Project Two did not need to know how MongoDB queries were implemented; it only needed to call methods such as create, read, update, or delete. This reduced redundancy and made troubleshooting significantly easier since any database issues could be isolated within a single file. Additionally, changes to authentication, query logic, or database structure could be made without having to modify the dashboard itself.
+In the future, this CRUD module could be reused in other applications such as web apps, APIs, or data analysis tools that require database access. The same module design could support different front ends, including web dashboards, mobile applications, or automated scripts, demonstrating how reusable components improve long-term software adaptability.
+
+# How do you approach a problem as a computer scientist?
+When approaching this project, I focused on breaking the problem into smaller functional components. Grazioso Salvare’s requirements included database storage, filtering capabilities, and interactive dashboard visualization. Instead of attempting to build everything at once, I first ensured the database connection and CRUD functionality worked correctly before integrating visualization and user interaction features.
+This approach differed from previous assignments because it required me to design a system rather than completing an assignment with a basic task to finish. I had to think about data flow, user interaction, and scalability instead of only producing one correct output. I used iterative development by testing each feature individually before combining them into the final dashboard.
+In future projects involving databases, I would continue using strategies such as modular design, incremental testing, and clear requirement analysis, as I found that these were crucial for my success. Creating schemas and planning query behavior early helps ensure databases meet client needs while remaining efficient and scalable.
+
+# What do computer scientists do, and why does it matter?
+Computer scientists design systems that transform data into useful information and tools that improve decision-making. Their work matters because organizations rely on software systems to manage large amounts of data efficiently and accurately.
+In this project, the dashboard allows a company like Grazioso Salvare to quickly filter and analyze animal shelter data instead of manually reviewing records. By automating data retrieval and visualization, our system saves time, reduces human error, and enables faster operational decisions. Interactive dashboards also make technical data accessible to non-technical users, inviting collaboration across an organization.
+Projects like this demonstrate how computer science solutions directly support real-world business goals by increasing efficiency, improving data visibility, and enabling informed decision-making.
