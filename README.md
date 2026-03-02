@@ -1,7 +1,7 @@
 # SNHU_CS340
 
 # Project Reflection
-How do you write programs that are maintainable, readable, and adaptable?
+#How do you write programs that are maintainable, readable, and adaptable?#
 Writing maintainable, readable, and adaptable programs requires careful organization and clear structure within the code. During Project One, I developed a reusable CRUD Python module that handled all database interactions independently from the dashboard interface. By separating database logic from user interface logic, the code became easier to understand, debug, and expand.
 The primary advantage of this approach was modularity. The dashboard in Project Two did not need to know how MongoDB queries were implemented; it only needed to call methods such as create, read, update, or delete. This reduced redundancy and made troubleshooting significantly easier since any database issues could be isolated within a single file. Additionally, changes to authentication, query logic, or database structure could be made without having to modify the dashboard itself.
 In the future, this CRUD module could be reused in other applications such as web apps, APIs, or data analysis tools that require database access. The same module design could support different front ends, including web dashboards, mobile applications, or automated scripts, demonstrating how reusable components improve long-term software adaptability.
